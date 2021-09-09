@@ -1,9 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Multi_Language_Xaml.Generator</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Magicodes.IE.Excel" Version="2.5.5.4" />
+    <PackageReference Include="Npoi.Mapper" Version="3.5.1" />
+  </ItemGroup>
 
 </Project>
