@@ -29,8 +29,8 @@ namespace Multi_Language_Xaml.Generator
                 Console.WriteLine($"{language}.xaml done.");
             }
 
-            Console.WriteLine("\r\nPress any key to continue...");
-            Console.Read();
+            Console.Write("\r\nPress any key to continue...");
+            Console.ReadKey();
         }
 
         private static (bool, IWorkbook) LoadExcel(string fileName)
@@ -100,6 +100,8 @@ namespace Multi_Language_Xaml.Generator
 
             if (savePath is not null)
             {
+                if (!Directory.Exists(savePath))
+                    Directory.CreateDirectory(savePath);
                 string parh = Path.Combine(savePath, $"{language}.xaml");
                 await File.WriteAllLinesAsync(parh, xamlContent);
             }
