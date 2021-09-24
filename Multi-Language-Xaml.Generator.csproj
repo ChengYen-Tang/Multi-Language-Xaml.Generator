@@ -4,6 +4,9 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Multi_Language_Xaml.Generator</RootNamespace>
+    <Version>1.1.0</Version>
+    <Authors>Kenneth Tang</Authors>
+    <Company />
   </PropertyGroup>
 
   <ItemGroup>
