@@ -93,7 +93,7 @@ namespace Multi_Language_Xaml.Generator
             List<string> xamlContent = new();
             xamlContent.Add("<ResourceDictionary xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"");
             xamlContent.Add("                    xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"");
-            xamlContent.Add("                    xmlns:system=\"clr -namespace:System;assembly=mscorlib\">");
+            xamlContent.Add("                    xmlns:system=\"clr-namespace:System;assembly=mscorlib\">");
             foreach(LanguageDto languageDto in languages)
                 xamlContent.Add($"    <system:String x:Key=\"{languageDto.Key}\">{languageDto.Language}</system:String>");
             xamlContent.Add("</ResourceDictionary>");
