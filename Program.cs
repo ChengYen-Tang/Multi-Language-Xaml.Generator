@@ -95,7 +95,7 @@ namespace Multi_Language_Xaml.Generator
             xamlContent.Add("                    xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"");
             xamlContent.Add("                    xmlns:system=\"clr-namespace:System;assembly=mscorlib\">");
             foreach(LanguageDto languageDto in languages)
-                xamlContent.Add($"    <system:String x:Key=\"{languageDto.Key}\">{languageDto.Language}</system:String>");
+                xamlContent.Add($"    <system:String x:Key=\"{languageDto.Key}\" xml:space=\"preserve\">{languageDto.Language}</system:String>");
             xamlContent.Add("</ResourceDictionary>");
 
             if (savePath is not null)
